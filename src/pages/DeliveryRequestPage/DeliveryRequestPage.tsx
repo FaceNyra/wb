@@ -6,12 +6,12 @@ import { deliveryRequestStore } from "@/entities/delivery-request/deliveryReques
 import { DataSlotWidget } from "@/widgets/data_slot/data_slot"
 
 export const DeliverRequests = observer(() => {
-  const { step, loadPlaceId } = deliveryRequestStore.state
+  const { step,  } = deliveryRequestStore.state
 
   return (
     <>
       {step === 0 && <LoadPlaceWidgets />}
-      {step === 1 &&<WarehouseCard />} 
+      {step === 1 && <WarehouseCard />} 
       {step === 2 && <DataSlotWidget />}
     </>
   )

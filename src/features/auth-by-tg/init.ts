@@ -1,5 +1,3 @@
-import { userStore } from "@stores/user/user-action/user-action";
-
 
 export function initTelegramUser() {
   const tg = window.Telegram?.WebApp;
@@ -9,11 +7,4 @@ export function initTelegramUser() {
   }
 
   tg.ready();
-
-  const user = tg.initDataUnsafe?.user;
-  if (user) {
-    userStore.initFromTelegram()
-  } else {
-    console.error("❗ Пользователь не найден в initDataUnsafe");
-  }
 }
