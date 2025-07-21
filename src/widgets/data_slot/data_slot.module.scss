@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #e5e7eb;
+  text-align: center;
+  margin-bottom: 18px;
+  line-height: 1.4;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  background: linear-gradient(145deg, #1c1c1f, #222226);
+  padding: 14px 18px;
+  border-radius: 14px;
+  transition: all 0.25s ease;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid #2b2b2f;
+}
+
+.item:hover {
+  background: linear-gradient(145deg, #2a2a2e, #323238);
+  transform: scale(1.01);
+}
+
+.info {
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #f9fafb;
+  margin-bottom: 6px;
+}
+
+.sub {
+  font-size: 0.88rem;
+  color: #d1d5db;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+.dateLine {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: #facc15; // мягкий жёлтый
+  margin-top: 6px;
+  font-weight: 500;
+}
