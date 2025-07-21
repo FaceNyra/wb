@@ -30,7 +30,7 @@ export const LoadPlaceWidgets = observer(() => {
       <main>
         <div className={styles.wrapper}>
           <h1 className={styles.heading}>Выберите место для загрузки</h1>
-          {data && data?.map((place) => (
+          {data?.map((place) => (
             <div
               key={place.id}
               className={styles.item}
